@@ -17,3 +17,4 @@
   * Nomes de funções começam com letra minúsculas e adotam a convenção camelCase.
   * Nomes de constantes são sempre em letras maiúsculas e separadas por underline, se necessário.
 * __Em Java, a alocação de arrays de tamanho fixo é feita de forma dinâmica. Ou seja, em Java, arrays são objetos.__
+* __A função "System.out.println()" pode receber qualquer coisa que seja transformável em uma String. Se passarmos um objeto cuja transformação em String não foi especificada, a função irá apenas "printar" a localização desse objeto na memória.__
