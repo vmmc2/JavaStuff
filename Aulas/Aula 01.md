@@ -11,3 +11,8 @@
   * Variáveis globais -> Ficam armazenadas na região reservada da memória. Normalmente, esse tipo de variável faz uso da keyword "static". Seu tempo de vida dura enquanto a JVM estiver rodando.
   * Variáveis locais -> Ficam armazenadas na região de memória conhecida como stack. Esse tipo de variável dura enquanto o escopo estiver sendo executado. 
   * Objetos -> Ficam armazenadas na região de memória conhecida como heap. Esse tipo de variável (objeto) é criado por meio do uso da keyword "new".
+* __Em Java, para criar uma função que não é um método, use a keyword "static". A keyword "static" permite que possamos executar um método de uma classe sem que tenhamos que criar um objeto dessa classe antes. A gente executa esse método da seguinte forma: "nomeDaClasse.nomeDoMetodoStatic".__
+* __Convenções adotadas na nomenclatura:__
+  * Nomes de classes sempre começam com letra maiúscula.
+  * Nomes de funções começam com letra minúsculas e adotam a convenção camelCase.
+  * Nomes de constantes são sempre em letras maiúsculas e separadas por underline, se necessário.
