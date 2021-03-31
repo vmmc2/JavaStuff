@@ -16,3 +16,4 @@
   * Nomes de classes sempre começam com letra maiúscula.
   * Nomes de funções começam com letra minúsculas e adotam a convenção camelCase.
   * Nomes de constantes são sempre em letras maiúsculas e separadas por underline, se necessário.
+* __Em Java, a alocação de arrays de tamanho fixo é feita de forma dinâmica. Ou seja, em Java, arrays são objetos.__
