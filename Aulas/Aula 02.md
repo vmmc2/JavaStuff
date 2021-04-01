@@ -52,3 +52,4 @@ class Horario{
   }
 }
 ```
+* __Vale destacar que quando o programador não define um construtor em uma classe, Java, implicitamente, define um construtor padrão que não possui nenhum parâmetro e não faz nada.__
