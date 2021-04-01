@@ -25,3 +25,8 @@ class Horario{
 }
 ```
 * Quando queremos printar um objeto em Java usando "System.out.println()", devemos, na classe referente a esse objeto, implementar o metodo "toString()", responsavel por "criar" uma representacao em String do tal objeto.
+
+### Java vs. Python
+* Java: Linguagem estaticamente tipada. Espera que muitas coisas sejam definidas em tempo de compilação.
+* Python: Linguagem dinamicamente tipada. Espera que muitas coisas sejam definidas em tempo de execução.
+* __Em Python, é permitido criar uma classe completamente vazia (isto é, sem atributos e nem métodos). Dito isso, é permitido ao programador inserir novos atributos em tempo de execução. (Não sei se isso vale para métodos).__
