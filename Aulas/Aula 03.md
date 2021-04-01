@@ -26,3 +26,7 @@ listinha.add(h1);
 listinha.add(h2);
 listinha.add(h3);
 ```
+* Para indicar que uma ou mais classes pertencem a um mesmo pacote, devemos colocar na primeira linha do arquivo que contém tais classes o seguinte:
+```java
+package nomeDoPacote;
+```
