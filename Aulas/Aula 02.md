@@ -41,6 +41,12 @@ class Horario{
   int minuto;
   int segundo;
   
+  Horario(){}
+  
+  Horario(int hora, int minuto){
+    this(hora, minuto, 0); //Esse construtor, que é mais simples, chama o construtor mais complexo (que também é mais flexível).
+  }
+  
   Horario(int hora, int minuto, int segundo){
     this.hora = hora;
     this.minuto = minuto;
@@ -52,4 +58,5 @@ class Horario{
   }
 }
 ```
-* __Vale destacar que quando o programador não define um construtor em uma classe, Java, implicitamente, define um construtor padrão que não possui nenhum parâmetro e não faz nada.__
+* __Vale destacar que quando o programador não define um construtor em uma classe, Java, implicitamente, define um construtor padrão que não possui nenhum parâmetro e não faz nada. Esse construtor "default" é chamado de construtor vazio.__ Se uma pessoa colocar um construtor qualquer numa classe, Java deixar de incluir o construtor vazio na classe. Dá para colocar ele de volta, mas o programador deve incluí-lo de forma manual.
+* __Consequentemente, é permitido que uma classe possua mais de um construtor.__
