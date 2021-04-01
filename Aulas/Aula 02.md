@@ -9,6 +9,17 @@ public class Horario{
   int hora;
   int minuto;
   int segundo;
+  
+  public String toString(){
+    return hora + "h" + minuto + "m" + segundo + "s"; //Em Java, temos que quando concatenamos alguma coisa com String, esse "alguma coisa" vira uma String.
+  }
+  
+  public static void main(String args[]){
+    Horario h1 = new Horario(); //Toda vez que um objeto for ser criado em Java, devemos usar a keyword "new".
+    //Importante ter em mente que quando vamos criamos um objeto e o atribuimos, como foi feito acima, estamos na verdade criando duas variaveis.
+    //O objeto em si (criado usando a keyword "new", que fica armazenado na heap. E um ponteiro implicito h1, que ta armazenado na stack/pilha e que aponta para esse objeto presente na heap.
+    return;
+  }
 
 }
 ```
