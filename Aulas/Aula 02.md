@@ -14,7 +14,7 @@ public class Aula02{
   }
 }
 
-public class Horario{
+class Horario{
   int hora;
   int minuto;
   int segundo;
