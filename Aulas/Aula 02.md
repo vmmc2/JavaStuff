@@ -30,3 +30,25 @@ class Horario{
 * Java: Linguagem estaticamente tipada. Espera que muitas coisas sejam definidas em tempo de compilação.
 * Python: Linguagem dinamicamente tipada. Espera que muitas coisas sejam definidas em tempo de execução.
 * __Em Python, é permitido criar uma classe completamente vazia (isto é, sem atributos e nem métodos). Dito isso, é permitido ao programador inserir novos atributos em tempo de execução. (Não sei se isso vale para métodos).__
+
+### Construtores
+* Um construtor é um método especial que é utilizado para criar instâncias de uma classe. Ou seja, é um método específico usado para criar objetos.
+* No construtor, podemos passar parâmetros, os quais serão usados para atribuir valores a atributos do objeto em questão.
+* Observe o exemplo a seguir de uma classe que faz uso de construtores:
+```java
+class Horario{
+  int hora;
+  int minuto;
+  int segundo;
+  
+  Horario(int hora, int minuto, int segundo){
+    this.hora = hora;
+    this.minuto = minuto;
+    this.segundo = segundo;
+  }
+  
+  public String toString(){
+    return this.hora + "h" + this.minuto + "m" + this.segundo + "s";
+  }
+}
+```
