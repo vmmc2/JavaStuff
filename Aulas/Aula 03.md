@@ -30,3 +30,6 @@ listinha.add(h3);
 ```java
 package nomeDoPacote;
 ```
+* __Construtores em Java podem ser públicos ou privados.__
+* __Privado só é visível dentro do arquivo. Público é visível em todo lugar.__
+* __Quando não tem nenhum modificador, a visiblidade é apenas para o pacote.__
