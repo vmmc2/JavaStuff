@@ -15,3 +15,14 @@ listinha.add(h1);
 listinha.add(h2);
 listinha.add(h3);
 ```
+* No entanto, normalmente, não é muito comum utilizar o nome completo do pacote (também conhecido como fully-qualified name).
+* __Cabe destacar que apenas as classes públicas de um pacote serão visíveis a outros pacotes. O mesmo se aplica aos atributos dentro dessas classes públicas. (Ou seja, tais atributos também devem ser públicos.__
+* Observe o exemplo:
+```java
+import java.util.ArrayList //Funciona como o "as" de Python.
+
+ArrayList<Horario> listinha = new ArrayList<Horario>();
+listinha.add(h1);
+listinha.add(h2);
+listinha.add(h3);
+```
