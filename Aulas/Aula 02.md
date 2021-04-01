@@ -1,4 +1,4 @@
-# Aula 02
+# Aula 02 - Classes, objetos, construtores e visibilidade em Java.
 
 ### Intro
 * Classes funcionam como "blueprints" para a criação de objetos.
