@@ -60,3 +60,8 @@ class Horario{
 ```
 * __Vale destacar que quando o programador não define um construtor em uma classe, Java, implicitamente, define um construtor padrão que não possui nenhum parâmetro e não faz nada. Esse construtor "default" é chamado de construtor vazio.__ Se uma pessoa colocar um construtor qualquer numa classe, Java deixar de incluir o construtor vazio na classe. Dá para colocar ele de volta, mas o programador deve incluí-lo de forma manual.
 * __Consequentemente, é permitido que uma classe possua mais de um construtor.__
+
+### Modificadores de Visibilidade (Private vs. Public)
+* A keyword "private" é um modificador de visibilidade que faz com que atributos e métodos de uma classe só sejam acessíveis dentro da classe em questão.
+* A keyword "public" é um modificador de visibilidade que faz com que atributos e métodos de uma classe sejam acessíveis por quaisquer outras classes no sistema. Mesmo que estejam em pacotes diferentes.
+* No geral, atributos são "private", pois podemos querer mudar a representação interna. 
