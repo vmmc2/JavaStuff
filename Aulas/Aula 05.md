@@ -28,4 +28,5 @@ public class Expressoes{
   }
 }
 ```
-* Ainda no exemplo acima, quando chamamos o metodo ```.avaliar()```, Java só vai definir qual das implementações desse método utilizar __em tempo de execução__. E a linguagem Java não vai usar o tipo da classe/variável para determinar isso. __Java usa o tipo do objeto/valor em questão.__ Ou seja, no exemplo acima, quando chamamos ```sominha.avaliar()```, estamos chamando a implementação ```.avaliar()``` de Soma e não de Expressao. Isso porque, em Expressao, temos um objeto/valor do tipo Soma.
+* Ainda no exemplo acima, quando chamamos o metodo ```.avaliar()```, Java só vai definir qual das implementações desse método utilizar __em tempo de execução__. E a linguagem Java não vai usar o tipo da classe/variável para determinar isso. __Java usa o tipo do objeto/valor em questão.__ Ou seja, no exemplo acima, quando chamamos ```sominha.avaliar()```, estamos chamando a implementação ```.avaliar()``` de Soma e não de Expressao. Isso porque, em Expressao, temos um objeto/valor do tipo Soma. Isso é o que chamamos de dispatch dinâmico.
+* Dá para fazer o que chamamos de dispatch estático, se usarmos a keyword "final".
