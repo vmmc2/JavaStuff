@@ -12,7 +12,6 @@ Soma(Expressao primeiro, Expressao segundo){ //Soma é uma subclasse da supercla
 ```
 * Se for usar "super", isso tem que ser a primeira coisa a ser chamada no construtor da subclasse.
 * __Além disso, eu só preciso chamar "super" explicitamente no construtor da subclasse, se a superclasse só possuir construtores que recebem parâmetros.__
-* __Quando a gente tem, por exemplo, uma "classe A" e uma "classe B", sendo que a "classe B" herda da "classe A", temos que se criamos um objeto do tipo "classe B" e o atribuirmos a uma variável do tipo "classe A" é como se fizessemos um cast de tipo "classe B" para o tipo "classe A" (Tem que confirmar isso!!!!!!).__
 * Conversão de Tipos de Subclasses e Superclasses. Observe o exemplo abaixo:
 ```java
 public class Expressoes{
@@ -27,8 +26,6 @@ public class Expressoes{
     
     return;
   }
-
-
 }
-
 ```
+* Ainda no exemplo acima, quando chamamos o metodo ```.avaliar()```, Java só vai definir qual das implementações desse método utilizar __em tempo de execução__. E a linguagem Java não vai usar o tipo da classe/variável para determinar isso. __Java usa o tipo do objeto/valor em questão.__ Ou seja, no exemplo acima, quando chamamos ```sominha.avaliar()```, estamos chamando a implementação ```.avaliar()``` de Soma e não de Expressao. Isso porque, em Expressao, temos um objeto/valor do tipo Soma.
