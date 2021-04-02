@@ -5,3 +5,4 @@
 * Aula 02 - Classes, objetos, construtores e visibilidade em Java.
 * Aula 03 - Sobrecarga e pacotes.
 * Aula 04 - Herança em Java.
+* Aula 05 - Ligação Dinâmica e Sobrescrita de Métodos.
