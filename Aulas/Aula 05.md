@@ -11,5 +11,5 @@ Soma(Expressao primeiro, Expressao segundo){ //Soma é uma subclasse da supercla
 }
 ```
 * Se for usar "super", isso tem que ser a primeira coisa a ser chamada no construtor da subclasse.
-
- 
+* __Além disso, eu só preciso chamar "super" explicitamente no construtor da subclasse, se a superclasse só possuir construtores que recebem parâmetros.__
+* __Quando a gente tem, por exemplo, uma "classe A" e uma "classe B", sendo que a "classe B" herda da "classe A", temos que se criamos um objeto do tipo "classe B" e o atribuirmos a uma variável do tipo "classe A" é como se fizessemos um cast de tipo "classe B" para o tipo "classe A" (Tem que confirmar isso!!!!!!).__
