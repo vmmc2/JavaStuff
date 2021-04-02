@@ -10,4 +10,6 @@ Soma(Expressao primeiro, Expressao segundo){ //Soma é uma subclasse da supercla
   this.segundo = segundo;
 }
 ```
+* Se for usar "super", isso tem que ser a primeira coisa a ser chamada no construtor da subclasse.
+
  
