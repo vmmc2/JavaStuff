@@ -46,8 +46,37 @@ double m(Conta c){
 * __ContaImpostoM muda a semântica do método ```debitar``` e, se herdar de Conta, quebra a noção de subtipos!!__ 
 * Uma possível solução é redefinir a estrutura hierárquica das classes envolvidas na hierarquia.
 * Qual seria, de fato, a alternativa para resolver esse problema?
-  * __O que existe de comum entre ```Conta``` e ```ContaImposto```?
+  * __O que existe de comum entre ```Conta``` e ```ContaImposto```?__
     --> Vamos criar uma nova classe (acima dessas duas na hierarquia) que contenha essa parte comum.
     --> ```Conta``` e ```ContaImposto``` devem herdar dessa nova classe criada.
   * __Atenção: O método ```debitar``` é diferente nas duas classes:__
     --> Mas ambas as contas devem permitir debitar um valor...
+* Nova implementação, fazendo uso de classes abstratas:
+```java
+public abstract class ContaAbstrata{
+ private String numero;
+ private double saldo;
+ 
+ public ContaAbstrata(String numero){
+  this.numero = numero;
+  this.saldo = 0.0;
+ }
+ public void creditar(double valor){
+  this.saldo = this.saldo + valor;
+  return;
+ }
+ public double getSaldo(){
+  return this.saldo;
+ }
+ public String getNumero(){
+  return this.numero;
+ }
+ protected void setSaldo(double saldo){
+  this.saldo = saldo;
+ }
+ public abstract void debitar(double valor);
+}
+```
+* __O método abstrato não tem implementação, mas:__
+  * Permite programar (não executar), chamando o método da classe abstrata (na classe ```Banco```, por exemplo).
+  * Obriga que as subclasses concretas implementem o método.
