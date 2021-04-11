@@ -81,3 +81,13 @@ public abstract class ContaAbstrata{
   * Permite programar (não executar), chamando o método da classe abstrata (na classe ```Banco```, por exemplo).
   * Obriga que as subclasses concretas implementem o método.
 * Não dá para criar um objeto a partir de uma classe abstrata.
+
+### Mais sobre Classes Abstratas
+* Possibilita herança de código preservando comportamento (semântica).
+  * Não do método ```debitar```, claro.
+* Métodos Abstratos:
+  * Geralmente existe pelo menos um desses métodos em uma classe abstrata.
+  * São implementados nas subclasses.
+* Não se cria objetos a partir de classes abstratas:
+  * Mas devem ter construtores para reuso.
+  * Se necessário, métodos ```protected``` para serem acessados nas subclasses.
