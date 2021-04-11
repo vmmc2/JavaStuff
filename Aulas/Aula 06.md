@@ -45,3 +45,9 @@ double m(Conta c){
 * O comportamento do código deveria ser independente do tipo do objeto (Conta, ContaEspecial, ContaImposto) associado a uma dada variável em tempo de execução. Não pode haver mudança na semântica do método.
 * __ContaImpostoM muda a semântica do método ```debitar``` e, se herdar de Conta, quebra a noção de subtipos!!__ 
 * Uma possível solução é redefinir a estrutura hierárquica das classes envolvidas na hierarquia.
+* Qual seria, de fato, a alternativa para resolver esse problema?
+  * __O que existe de comum entre ```Conta``` e ```ContaImposto```?
+    --> Vamos criar uma nova classe (acima dessas duas na hierarquia) que contenha essa parte comum.
+    --> ```Conta``` e ```ContaImposto``` devem herdar dessa nova classe criada.
+  * __Atenção: O método ```debitar``` é diferente nas duas classes:
+    --> Mas ambas as contas devem permitir debitar um valor...
