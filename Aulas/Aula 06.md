@@ -49,5 +49,5 @@ double m(Conta c){
   * __O que existe de comum entre ```Conta``` e ```ContaImposto```?
     --> Vamos criar uma nova classe (acima dessas duas na hierarquia) que contenha essa parte comum.
     --> ```Conta``` e ```ContaImposto``` devem herdar dessa nova classe criada.
-  * __Atenção: O método ```debitar``` é diferente nas duas classes:
+  * __Atenção: O método ```debitar``` é diferente nas duas classes:__
     --> Mas ambas as contas devem permitir debitar um valor...
