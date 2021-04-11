@@ -41,3 +41,7 @@ double m(Conta c){
  return c.getSaldo();
 }
 ```
+* Deveria ser possível raciocinar sobre o código usando-se apenas a definição dos tipos das variáveis envolvidas (Conta).
+* O comportamento do código deveria ser independente do tipo do objeto (Conta, ContaEspecial, ContaImposto) associado a uma dada variável em tempo de execução. Não pode haver mudança na semântica do método.
+* __ContaImpostoM muda a semântica do método ```debitar``` e, se herdar de Conta, quebra a noção de subtipos!!__ 
+* Uma possível solução é redefinir a estrutura hierárquica das classes envolvidas na hierarquia.
