@@ -80,3 +80,4 @@ public abstract class ContaAbstrata{
 * __O método abstrato não tem implementação, mas:__
   * Permite programar (não executar), chamando o método da classe abstrata (na classe ```Banco```, por exemplo).
   * Obriga que as subclasses concretas implementem o método.
+* Não dá para criar um objeto a partir de uma classe abstrata.
