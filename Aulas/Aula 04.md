@@ -5,7 +5,7 @@
   * __Permitir a reusabilidade de código.__
   * __Tornar o código mais escalável. Isto é, fazer com que seja mais fácil estender o programa.__
 * Podemos dizer que uma "classe A" herda de uma "classe B". Ou que uma "classe A" é uma subclasse da "classe B". Ou ainda, que a "classe A" estende a "classe B".
-* __Em Java, temos 4 níveis de visibilidade. São eles (do mais restrito ao mais livre): "private" -> "package" (não tem nenhum modificador) -> "protected" -> "public".
+* __Em Java, temos 4 níveis de visibilidade. São eles (do mais restrito ao mais livre): "private" -> "package" (não tem nenhum modificador) -> "protected" -> "public".__
 * __Mas o que queremos dizer quandos falamos que uma "classe A" herda de uma "classe B"? Queremos dizer que, todos os membros public/protected da "classe B" são visíveis para a "classe A".__
 * __IMPORTANTE: Se a subclasse estiver no mesmo pacote que a superclasse, a subclasse consegue "ver" os membros sem modificadores da superclasse.__
 * Herança de classes possui a propriedade transitiva.
