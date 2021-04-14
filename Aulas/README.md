@@ -7,6 +7,7 @@
 * Aula 04 - Herança em Java.
 * Aula 05 - Ligação Dinâmica e Sobrescrita de Métodos.
 * Aula 06 - Classes Abstratas.
+* Aula 07 - Interfaces.
 
 ### Dúvidas
 * O tipo herdado de uma subclasse é o tipo da superclasse que está no topo da hierarquia ou é o tipo da superclasse que está imediatamente acima da subclasse na hierarquia?
