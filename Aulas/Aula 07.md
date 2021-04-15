@@ -33,6 +33,6 @@ class Morcego implements Animal(){
     return 4.5;
   }
 }
-
-
+// Nada impede que novos métodos e atributos sejam criados em uma classe que implementa uma interface.
 ```
+* Em cada arquivo deve existir no máximo uma classe pública.
