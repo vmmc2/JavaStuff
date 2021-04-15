@@ -37,3 +37,13 @@ class Morcego implements Animal(){
 ```
 * Em cada arquivo deve existir no máximo uma classe pública.
 * __Em Java, é permitido que uma classe implemente mais de uma interface. Separar as interfaces em questão por vírgulas. Se uma classe implementa uma interface, a classe deve implementar todos os métodos da interface.__
+* Criando uma interface para armazenar contas bancárias de maneiras distintas:
+```java
+public interface RepositorioContas{
+  void inserir(ContaAbstrata conta);
+  ContaAbstrata procurar(String numero);
+  void remover(String numero);
+  void atualizar(ContaAbstrata conta);
+  boolean existe(String numero);
+}
+```
