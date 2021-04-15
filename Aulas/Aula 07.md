@@ -36,4 +36,4 @@ class Morcego implements Animal(){
 // Nada impede que novos métodos e atributos sejam criados em uma classe que implementa uma interface.
 ```
 * Em cada arquivo deve existir no máximo uma classe pública.
-* __Em Java, é permitido que uma classe implemente mais de uma interface. Separa as interfaces em questão por vírgulas. Se uma classe implementa uma interface, a classe deve implementar todos os métodos da interface.__
+* __Em Java, é permitido que uma classe implemente mais de uma interface. Separar as interfaces em questão por vírgulas. Se uma classe implementa uma interface, a classe deve implementar todos os métodos da interface.__
