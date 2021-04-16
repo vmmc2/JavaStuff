@@ -78,7 +78,9 @@ class ExprAritmetica implements Expression{
         return "(" + exp + ")";
     }
     public String toString(){
-        return "";
+        String pt1 = getClass().getName() + " @ ";
+        String pt2 = Integer.toHexString(hashCode());
+        return (pt1 + pt2);
     }
     public String getExpr(){
         return expr;
@@ -214,7 +216,9 @@ class ExprLogica implements Expression{
         return "(" + exp + ")";
     }
     public String toString(){
-        return "";
+        String pt1 = getClass().getName() + " @ ";
+        String pt2 = Integer.toHexString(hashCode());
+        return (pt1 + pt2);
     }
     public String getExpr(){
         return expr;
@@ -227,16 +231,18 @@ class ExprLogica implements Expression{
 
 public class Q6{
     public static void main(String args[]){
-        String expr = "2+5/10<12+16";
+        String expr = "2+5";
         TipoExpressao tipo = descobreTipoDeExpr(expr);
         if(tipo == TipoExpressao.ARITMETICA){
             ExprAritmetica example = new ExprAritmetica(expr);
             System.out.println(example.avaliar(example.getExpr()));
             System.out.println(example.imprimirArvore(example.getExpr()));
+            System.out.println("Example: " + example);
         }else if(tipo == TipoExpressao.LOGICA){
             ExprLogica example = new ExprLogica(expr);
             System.out.println(example.avaliar(example.getExpr()));
             System.out.println(example.imprimirArvore(example.getExpr()));
+            System.out.println("Example: " + example);
         }
         return;
     }
@@ -253,6 +259,5 @@ public class Q6{
 }
 /*
 "2/3+4*5-1" -> 19.6666667
-
-
+"2+5/10<12+16" -> True
 */
