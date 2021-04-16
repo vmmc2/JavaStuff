@@ -78,9 +78,10 @@ class ExprAritmetica implements Expression{
         return "(" + exp + ")";
     }
     public String toString(){
-        String pt1 = getClass().getName() + " @ ";
-        String pt2 = Integer.toHexString(hashCode());
-        return (pt1 + pt2);
+        String pt1 = getClass().getName() + "@";
+        String pt2 = Integer.toHexString(hashCode()) + " -> ";
+        String pt3 = getExpr();
+        return (pt1 + pt2 + pt3);
     }
     public String getExpr(){
         return expr;
@@ -216,9 +217,10 @@ class ExprLogica implements Expression{
         return "(" + exp + ")";
     }
     public String toString(){
-        String pt1 = getClass().getName() + " @ ";
-        String pt2 = Integer.toHexString(hashCode());
-        return (pt1 + pt2);
+        String pt1 = getClass().getName() + "@";
+        String pt2 = Integer.toHexString(hashCode()) + " -> ";
+        String pt3 = getExpr();
+        return (pt1 + pt2 + pt3);
     }
     public String getExpr(){
         return expr;
